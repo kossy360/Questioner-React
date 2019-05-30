@@ -1,5 +1,8 @@
-function* testSaga() {
-  yield 0;
+import { spawn } from 'redux-saga/effects';
+import AuthSaga from './AuthSaga';
+
+function* rootSaga() {
+  yield spawn(AuthSaga);
 }
 
-export default testSaga;
+export default rootSaga;

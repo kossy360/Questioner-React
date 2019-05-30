@@ -2,11 +2,12 @@ import axios from 'axios';
 
 const API_BASE_URL = 'https://k-questioner.herokuapp.com/api/v1';
 
-const client = axios.create({
+export const client = axios.create({
   baseURL: API_BASE_URL,
   headers: {
     'Content-Type': 'application/json',
   },
 });
 
-export default client;
+export const signUp = userData => client.post('/auth/signup', userData);
+export const signIn = userData => client.post('/auth/login', userData);
