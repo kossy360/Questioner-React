@@ -56,10 +56,10 @@ module.exports = {
     chunkFilename: '[name].[chunkhash].js',
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    sourceMapFilename: 'bundle.map',
+    sourceMapFilename: '[file].map',
     publicPath: '/'
   },
-  devtool: '#source-map',
+  devtool: 'source-map',
   optimization: {
     splitChunks: {
       cacheGroups: {
