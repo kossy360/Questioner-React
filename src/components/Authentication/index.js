@@ -26,7 +26,7 @@ const Authentication = ({
   };
 
   return (
-    <>
+    <div className="landing-page-container">
       <header className="main header">
         <p>Questioner</p>
       </header>
@@ -56,7 +56,7 @@ const Authentication = ({
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
