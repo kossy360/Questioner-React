@@ -24,3 +24,7 @@ export const authLoading = () => ({
 export const authFailed = () => ({
   type: actions.AUTH_FAILURE,
 });
+
+export const signoutUser = () => ({
+  type: actions.SIGN_OUT,
+});
