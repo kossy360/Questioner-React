@@ -10,4 +10,7 @@ export const client = axios.create({
 });
 
 export const signUp = userData => client.post('/auth/signup', userData);
+
 export const signIn = userData => client.post('/auth/login', userData);
+
+export const getAllMeetups = token => client.get('/meetups', { headers: { 'x-access-token': token } });

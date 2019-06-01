@@ -6,6 +6,7 @@ import Header from './Header';
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
 import NotFound from '../components/NotFound';
+import AllMeetups from './AllMeetups';
 
 const component = () => <div />;
 
@@ -21,7 +22,7 @@ const Home = ({ isAuth, isadmin, match }) => {
 
   switch (params) {
     case '':
-      Component = component;
+      Component = AllMeetups;
       tabIndex = 0;
       break;
     case 'booked':
