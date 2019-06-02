@@ -1,5 +1,6 @@
 import React from 'react';
 import propTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const Tags = ({ tags }) => (
   <div className="meet-tags-container">
@@ -11,7 +12,9 @@ const Tags = ({ tags }) => (
     </div>
     <div className="meet-tags populated">
       {tags.map(tag => (
-        <span key={Math.random().toString()} className="meet-tag">{tag}</span>
+        <Link key={Math.random().toString()} to="/search">
+          <span className="meet-tag">{tag}</span>
+        </Link>
       ))}
     </div>
   </div>
