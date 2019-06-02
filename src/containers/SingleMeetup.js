@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
 import { getMeetup } from '../actions/singleMeetupActions';
 import Meetups from '../components/Meetup';
+import Questions from './Questions';
 
 const SingleMeetup = ({
   dispatch, token, meetup, isadmin, id
@@ -17,7 +18,7 @@ const SingleMeetup = ({
         <title>{meetup.topic}</title>
       </Helmet>
       <Meetups meetups={[meetup]} isadmin={isadmin} isSingle>
-        <div>expanded</div>
+        <Questions id={meetup.id} />
       </Meetups>
     </>
   ) : null;
