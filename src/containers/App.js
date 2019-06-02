@@ -9,7 +9,8 @@ const app = () => (
     <Switch>
       <Route path="/index" component={Authentication} />
       <Route path="/" exact component={Home} />
-      <Route path="/:page" component={Home} />
+      <Route path="/:page" exact component={Home} />
+      <Route path="/meetups/:meetupId" exact component={Home} />
       <Route component={NotFound} />
     </Switch>
   </Router>

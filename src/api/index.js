@@ -14,3 +14,5 @@ export const signUp = userData => client.post('/auth/signup', userData);
 export const signIn = userData => client.post('/auth/login', userData);
 
 export const getAllMeetups = token => client.get('/meetups', { headers: { 'x-access-token': token } });
+
+export const getSingleMeetup = (id, token) => client.get(`/meetups/${id}`, { headers: { 'x-access-token': token } });
