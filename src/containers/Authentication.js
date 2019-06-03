@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import AuthComponent from '../components/Authentication';
 import { signupStarted, signinStarted } from '../actions/AuthActions';
 
-const Authentication = ({
+export const Authentication = ({
   startSignup, startSignin, loading, error, isAuth
 }) => !isAuth ? (
   <AuthComponent
