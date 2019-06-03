@@ -36,7 +36,7 @@ const authFail = (state, action) => ({
 
 const signOut = () => initialState;
 
-const AuthReducer = (state = initialState, action) => {
+export const AuthReducer = (state = initialState, action) => {
   switch (action.type) {
     case actions.AUTH_LOADING: return authLoading(state, action);
     case actions.AUTH_SUCCESS: return authSuccess(state, action);
