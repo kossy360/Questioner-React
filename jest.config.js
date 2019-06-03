@@ -1,7 +1,7 @@
 module.exports = {
   clearMocks: true,
   collectCoverage: true,
-  coverageReporters: ['text', 'text-lcov'],
+  coverageReporters: ['text', 'lcov'],
   coverageDirectory: 'coverage',
   moduleFileExtensions: ['js', 'json', 'jsx'],
   setupFiles: ['<rootDir>/enzyme.config.js'],
